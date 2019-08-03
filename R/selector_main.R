@@ -8,6 +8,7 @@
 #' @param f Object obtained by fitting a model using sem() or cfa() in lavaan.
 #' @param seed Random seed.
 #' @param b.reps Number of bootstrap samples.
+#' @param method The metric that selector uses. A vector consisting of one or more of the following: "AD", "CVM", "KS", "EC5" 
 #' @return Plot of bootstrap p-values and the selected test statistic and its associated p-value
 #' @export
 selector <- function(f, R=1000, seed=1, method="AD"){
