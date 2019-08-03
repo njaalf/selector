@@ -20,5 +20,5 @@ test_pvalues <- function(f){
               get_pvalues(tml,  Re(eigen(UG)$values[1:df])),
               ss = unname(get_ss_pvalue(tml, df, UG)))
   
-  porigs
+  round(porigs,4)
 }
